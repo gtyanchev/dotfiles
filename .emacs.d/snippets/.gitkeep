@@ -1,0 +1,6 @@
+auto-save-list/*
+backups/*
+elpa/archives/*
+eshell/history
+url/cookies
+session.*
