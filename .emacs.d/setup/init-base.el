@@ -216,3 +216,13 @@
 (subword-mode 1)
 
 (provide 'init-base)
+
+(use-package projectile
+  :ensure t
+  :config
+  (projectile-global-mode 1))
+
+(use-package counsel-projectile
+  :ensure t
+  :config
+  (counsel-projectile-mode))
