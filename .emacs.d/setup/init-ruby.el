@@ -18,4 +18,10 @@
   :config
   (define-key 'help-command (kbd "R") 'yari))
 
+(use-package flycheck
+  :config
+  (setq flycheck-ruby-executable "~/.rbenv/shims/ruby")
+  (setq flycheck-ruby-rubocop-executable "~/.rbenv/shims/rubocop")
+  (setq flycheck-rubocop-lint-only t))
+
 (provide 'init-ruby)
