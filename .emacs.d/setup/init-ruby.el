@@ -24,4 +24,9 @@
   (setq flycheck-ruby-rubocop-executable "~/.rbenv/shims/rubocop")
   (setq flycheck-rubocop-lint-only t))
 
+(use-package rspec-mode
+  :ensure t
+  :config
+  (rspec-install-snippets))
+
 (provide 'init-ruby)

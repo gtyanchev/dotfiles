@@ -149,7 +149,12 @@
     ;; invert the navigation direction if the the completion popup-isearch-match
     ;; is displayed on top (happens near the bottom of windows)
     (setq company-tooltip-flip-when-above t)
-    (global-company-mode 1)))
+    (global-company-mode 1)
+    (with-eval-after-load 'company
+      (define-key company-active-map (kbd "M-n") nil)
+      (define-key company-active-map (kbd "M-p") nil)
+      (define-key company-active-map (kbd "C-n") #'company-select-next)
+      (define-key company-active-map (kbd "C-p") #'company-select-previous))))
 
 (use-package flycheck
   :ensure t
@@ -214,6 +219,9 @@
 
 ;; Allow operations on words to be applied on camelcase entries
 (subword-mode 1)
+
+;; Make a bigger font-size.
+(set-face-attribute 'default nil :height 140)
 
 (provide 'init-base)
 
