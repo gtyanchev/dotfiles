@@ -119,7 +119,15 @@
   (progn
     (ivy-mode 1)
     (setq ivy-use-virtual-buffers t)
-    (define-key read-expression-map (kbd "C-r") #'counsel-minibuffer-history)))
+    (define-key read-expression-map (kbd "C-r") #'counsel-minibuffer-history)
+    (ivy-set-actions
+      'ivy-switch-buffer
+      '(("k"
+         (lambda (x)
+           (kill-buffer x)
+           (ivy--reset-state ivy-last))
+         "kill")
+        ))))
 
 (use-package command-log-mode
   :ensure t)
