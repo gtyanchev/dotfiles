@@ -226,7 +226,7 @@
   :ensure t)
 
 ;; Allow operations on words to be applied on camelcase entries
-(subword-mode 1)
+(add-hook 'prog-mode-hook 'subword-mode)
 
 ;; Make a bigger font-size.
 (set-face-attribute 'default nil :height 140)
