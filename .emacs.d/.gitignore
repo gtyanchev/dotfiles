@@ -3,3 +3,5 @@ backups/*
 elpa/*
 recentf
 projectile-bookmarks.eld
+smex-items
+eshell/*
