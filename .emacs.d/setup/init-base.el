@@ -242,3 +242,11 @@
   :ensure t
   :config
   (counsel-projectile-mode))
+
+(use-package ag
+  :ensure t
+  :config
+  (setq ag-highlight-search t))
+
+(setenv "PATH" (concat "/usr/local/bin:" (getenv "PATH")))
+(setq exec-path (cons "/usr/local/bin" exec-path))
