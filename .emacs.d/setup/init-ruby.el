@@ -37,4 +37,8 @@
 (setenv "PATH" (concat "./bin:" (getenv "PATH")))
 (setq exec-path (cons "./bin" exec-path))
 
+(use-package yaml-mode
+ :ensure t
+ :mode (("\\.yml\\'" . yaml-mode)))
+
 (provide 'init-ruby)
