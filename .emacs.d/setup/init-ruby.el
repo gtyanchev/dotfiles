@@ -41,4 +41,12 @@
  :ensure t
  :mode (("\\.yml\\'" . yaml-mode)))
 
+(use-package inf-ruby
+  :ensure t)
+
+(use-package robe
+  :ensure t
+  :config
+  (add-hook 'ruby-mode-hook 'robe-mode))
+
 (provide 'init-ruby)
