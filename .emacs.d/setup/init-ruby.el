@@ -47,6 +47,10 @@
 (use-package robe
   :ensure t
   :config
-  (add-hook 'ruby-mode-hook 'robe-mode))
+  (progn
+    (add-hook 'ruby-mode-hook 'robe-mode)
+    ;; (eval-after-load 'company
+    ;;   '(push 'company-robe company-backends))
+    ))
 
 (provide 'init-ruby)
