@@ -32,6 +32,7 @@
 
 ;;;; Disable bell sound, instead try to flash
 (setq visible-bell t)
+(setq ring-bell-function 'ignore)
 
 ;; Disable blink cursor.
 (blink-cursor-mode -1)
