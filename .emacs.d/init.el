@@ -9,3 +9,4 @@
 (require 'init-version-control)
 (require 'init-ruby)
 (require 'init-web-dev)
+(require 'osx)
