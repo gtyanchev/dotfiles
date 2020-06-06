@@ -236,6 +236,8 @@
 (set-face-attribute 'default nil :height 140)
 
 (provide 'init-base)
+;; Dired human readable sizes
+(setq dired-listing-switches "-alh")
 
 (use-package projectile
   :ensure t
