@@ -1,3 +1,6 @@
+;; Run a server on start
+(server-start)
+
 ;; Keep emacs custom settings in custom file.
 (setq custom-file (expand-file-name "setup/custom.el" user-emacs-directory))
 (load custom-file)
