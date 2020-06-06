@@ -235,7 +235,6 @@
 ;; Make a bigger font-size.
 (set-face-attribute 'default nil :height 140)
 
-(provide 'init-base)
 ;; Dired human readable sizes
 (setq dired-listing-switches "-alh")
 
@@ -257,3 +256,5 @@
 
 (setenv "PATH" (concat "/usr/local/bin:" (getenv "PATH")))
 (setq exec-path (cons "/usr/local/bin" exec-path))
+
+(provide 'init-base)
