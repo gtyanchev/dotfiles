@@ -8,5 +8,6 @@
 (require 'init-base)
 (require 'init-version-control)
 (require 'init-ruby)
+(require 'init-javascript)
 (require 'init-web-dev)
 (require 'osx)
