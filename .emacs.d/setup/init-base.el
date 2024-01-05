@@ -118,7 +118,7 @@
    ("C-c h v" . counsel-describe-variable)
    ("C-c i u" . counsel-unicode-char)
    ("C-c g" . counsel-git)
-   ("C-c j" . counsel-git-grep))
+   ("C-c j" . ag-project))
   :config
   (progn
     (ivy-mode 1)
@@ -438,6 +438,8 @@
   :ensure t
   :commands lsp-treemacs-errors-list)
 
+(use-package restclient
+  :ensure t)
 
 
 (provide 'init-base)
